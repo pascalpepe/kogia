@@ -61,8 +61,7 @@ Can I contribute?
 =================
 
 Please do! This project is open source, so contributions are very welcome! If
-you don't know how to proceed, here are some `contribution guidelines <https://gitlab.com/pascalpepe/kogia/-/blob/main/CONTRIBUTING.md>`_.
-that might help.
+you don't know how to proceed, here are some `contribution guidelines <https://gitlab.com/pascalpepe/kogia/-/blob/main/CONTRIBUTING.md>`_ that might help.
 
 
 Copyrights and licenses
