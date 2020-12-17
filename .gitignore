@@ -25,6 +25,9 @@ docs/_build/
 # Node.js
 node_modules/
 
+# GitLab Pages
+public/
+
 # pyenv
 .python-version
 
