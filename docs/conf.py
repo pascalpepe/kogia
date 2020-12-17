@@ -22,7 +22,7 @@ django.setup()
 
 # -- Project information -----------------------------------------------------
 
-project = 'miniPages'
+project = 'Kogia'
 copyright = '2020, Pascal Pepe'
 author = 'Pascal Pepe'
 
