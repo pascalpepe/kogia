@@ -2,17 +2,67 @@
 Kogia
 =====
 
-.. image:: https://img.shields.io/badge/license-Apache--2.0-blue.svg
+Kogia is a toolbox for Django.
+
+.. image:: https://img.shields.io/pypi/l/kogia
    :alt: Apache-2.0
-   :target: https://gitlab.com/pascalpepe/kogia/blob/nebula/LICENSE
+   :target: https://gitlab.com/pascalpepe/kogia/blob/main/LICENSE
+
+.. image:: https://img.shields.io/pypi/v/kogia
+   :alt: PyPI
+   :target: https://pypi.org/project/kogia/
+
+.. image:: https://img.shields.io/pypi/pyversions/kogia
+   :alt: Python
+   :target: https://pypi.org/project/kogia/
+
+.. image:: https://img.shields.io/pypi/djversions/kogia?label=django
+   :alt: Django
+   :target: https://pypi.org/project/kogia/
+
+.. image:: https://gitlab.com/pascalpepe/kogia/badges/main/pipeline.svg
+   :alt: Pipeline
+   :target: https://gitlab.com/pascalpepe/kogia/-/pipelines
 
 
 Status
 ======
 
-1. Kogia is still under development. Do not run it in production.
+1. This project is still in its initial development stage. Anything may change
+   at any time.
 2. "Kogia" is a code name. The project will be renamed after its first stable
    release. Everything else will stay the same.
+
+
+Supported versions of Python and Django
+=======================================
+
+======= ===================================
+Django  Python
+======= ===================================
+2.2 LTS 3.5, 3.6, 3.7, 3.8 (added in 2.2.8)
+------- -----------------------------------
+3.1     3.6, 3.7, 3.8
+======= ===================================
+
+
+Documentation
+=============
+
+The documentation of this project is available at
+https://pascalpepe.gitlab.io/kogia.
+
+- `Getting started <https://pascalpepe.gitlab.io/kogia/getting-started.html>`_
+- `Module references <https://pascalpepe.gitlab.io/kogia/references/index.html>`_
+- `Release notes <https://pascalpepe.gitlab.io/kogia/releases/index.html>`_
+
+
+Can I contribute?
+=================
+
+Please do! This project is open source, so contributions are very welcome! If
+you don't know how to proceed, here are some `contribution guidelines <https://gitlab.com/pascalpepe/kogia/-/blob/main/CONTRIBUTING.md>`_.
+that might help.
 
 
 Copyrights and licenses
