@@ -14,16 +14,18 @@ The Kogia open-source project
 - Released the project on `PyPI <https://pypi.org/project/kogia/>`_.
 
 
-Tests
-=====
+Testing and continuous integration
+==================================
 
-- Set up the project testing suite with:
+- Set up GitHub Actions in order to:
 
-  * `Coverage.py <https://coverage.readthedocs.io>`_ for measuring code coverage.
-  * `Flake8 <https://flake8.readthedocs.io>`_ for linting.
-  * `Black <https://black.readthedocs.io>`_ for formatting Python code.
-  * `isort <https://pycqa.github.io/isort/>`_ for sorting imports.
-
+  * Check formatting with `Black <https://black.readthedocs.io>`_.
+  * Check code style with `Flake8 <https://flake8.readthedocs.io>`_.
+  * Check imports with `isort <https://pycqa.github.io/isort/>`_.
+  * Run Django tests and display `coverage <https://coverage.readthedocs.io>`_
+    summary for all supported versions of Python and Django.
+  * Check links in the documentation.
+  * Build the documentation.
 
 Documentation
 =============
