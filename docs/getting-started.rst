@@ -27,7 +27,6 @@ Django  Python
 We highly recommend the latest release of each series for both Python and
 Django.
 
-
 Python virtual environment
 --------------------------
 
@@ -49,14 +48,13 @@ the Python Package Index. You can install the latest release with pip:
 
     pip install kogia
 
-
 Get the latest development version
 ----------------------------------
 
 .. note::
 
-   This option is not recommended unless you want to try incoming changes. You might
-   encounter new bugs in the development version.
+   This option is not recommended unless you want to try incoming changes. You
+   might encounter new bugs in the development version.
 
 You can install the latest development version of this project from
 the `Git repository <https://github.com/pascalpepe/kogia>`_:

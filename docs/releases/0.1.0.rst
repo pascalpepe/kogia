@@ -2,7 +2,7 @@
 Kogia 0.1.0 release notes
 =========================
 
-*Unreleased*
+*In development*
 
 
 The Kogia open-source project
@@ -27,12 +27,12 @@ Testing and continuous integration
   * Check links in the documentation.
   * Build the documentation.
 
+
 Documentation
 =============
 
-- Initialized the project documentation with `Sphinx <https://www.sphinx-doc.org>`_ and a
-  `theme <https://github.com/rtfd/sphinx_rtd_theme>`_ provided by
-  `Read the Docs <https://readthedocs.org/>`_.
+- Initialized the project documentation with `Sphinx <https://www.sphinx-doc.org>`_
+  and the theme `Furo <https://pradyunsg.me/furo/>`_
 - Set up Sphinx autodoc extension to include documentation from docstrings.
 - Set up Sphinx napoleon extension to add support for NumPy style docstrings.
 - Added initial pages:

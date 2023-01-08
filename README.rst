@@ -20,6 +20,10 @@ Kogia is a toolbox for Django.
    :alt: Django
    :target: https://pypi.org/project/kogia/
 
+.. image:: https://github.com/pascalpepe/kogia/actions/workflows/ci.yml/badge.svg
+   :alt: CI
+   :target: https://github.com/pascalpepe/kogia/actions/workflows/ci.yml
+
 
 Status
 ======
@@ -37,13 +41,6 @@ https://github.com/pascalpepe/kogia/tree/main/docs.
 - `Getting started <https://github.com/pascalpepe/kogia/blob/main/docs/getting-started.rst>`_
 - `Module references <https://github.com/pascalpepe/kogia/tree/main/docs/references>`_
 - `Release notes <https://github.com/pascalpepe/kogia/tree/main/docs/releases>`_
-
-
-Can I contribute?
-=================
-
-Please do! This project is open source, so contributions are very welcome! If
-you don't know how to proceed, here are some `contribution guidelines <https://github.com/pascalpepe/kogia/blob/main/CONTRIBUTING.md>`_ that might help.
 
 
 License
