@@ -77,8 +77,8 @@ Update your ``INSTALLED_APPS`` setting:
 .. code-block:: python
 
     INSTALLED_APPS = [
+        "kogia.core",
+        "kogia.intl",
+        "kogia.pages",
         ...
-        'kogia.core',
-        'kogia.intl',
-        'kogia.pages',
     ]

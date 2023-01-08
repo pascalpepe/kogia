@@ -29,15 +29,15 @@ class PageTranslation(AbstractPageTranslation):
     parent = models.ForeignKey(
         Page,
         on_delete=models.CASCADE,
-        related_name='translations',
+        related_name="translations",
     )
 
     class Meta:
-        ordering = ['parent', 'language']
+        ordering = ["parent", "language"]
         unique_together = [
-            ['parent', 'language'],
-            ['slug', 'language'],
+            ["parent", "language"],
+            ["slug", "language"],
         ]
 
     def get_absolute_url(self):
-        return reverse('page-detail', kwargs={'slug': str(self.slug)})
+        return reverse("page-detail", kwargs={"slug": str(self.slug)})

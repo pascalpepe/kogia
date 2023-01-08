@@ -20,5 +20,5 @@ from django.utils.translation import gettext_lazy as _
 class PagesConfig(AppConfig):
     """Default application configuration."""
 
-    name = 'kogia.pages'
-    verbose_name = _('Pages')
+    name = "kogia.pages"
+    verbose_name = _("Pages")

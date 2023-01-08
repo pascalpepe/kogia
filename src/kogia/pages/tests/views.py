@@ -13,8 +13,8 @@
 # limitations under the License.
 """Views for testing the Pages application."""
 
-from kogia.pages.views import PageDetail, PageList
 from kogia.pages.tests.models import PageTranslation
+from kogia.pages.views import PageDetail, PageList
 
 
 class PageMixin:

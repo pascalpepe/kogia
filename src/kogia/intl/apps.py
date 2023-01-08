@@ -20,5 +20,5 @@ from django.utils.translation import gettext_lazy as _
 class IntlConfig(AppConfig):
     """Default application configuration."""
 
-    name = 'kogia.intl'
-    verbose_name = _('Internationalization')
+    name = "kogia.intl"
+    verbose_name = _("Internationalization")

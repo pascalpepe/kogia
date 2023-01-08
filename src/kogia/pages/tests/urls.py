@@ -18,6 +18,6 @@ from django.urls import path
 from kogia.pages.tests import views
 
 urlpatterns = [
-    path('pages/<slug:slug>/', views.PageDetail.as_view(), name='page-detail'),
-    path('pages/', views.PageList.as_view(), name='page-list'),
+    path("pages/<slug:slug>/", views.PageDetail.as_view(), name="page-detail"),
+    path("pages/", views.PageList.as_view(), name="page-list"),
 ]

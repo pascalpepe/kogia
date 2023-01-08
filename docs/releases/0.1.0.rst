@@ -19,8 +19,10 @@ Tests
 
 - Set up the project testing suite with:
 
-  * `Coverage.py <https://coverage.readthedocs.io>`_ for measuring code coverage,
+  * `Coverage.py <https://coverage.readthedocs.io>`_ for measuring code coverage.
   * `Flake8 <https://flake8.readthedocs.io>`_ for linting.
+  * `Black <https://black.readthedocs.io>`_ for formatting Python code.
+  * `isort <https://pycqa.github.io/isort/>`_ for sorting imports.
 
 
 Documentation

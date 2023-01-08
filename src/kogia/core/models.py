@@ -25,7 +25,7 @@ class ArchivableModel(models.Model):
 
     is_archived = models.BooleanField(
         default=False,
-        verbose_name=_('archived?'),
+        verbose_name=_("archived?"),
     )
 
     class Meta:
@@ -38,7 +38,7 @@ class OrderableModel(models.Model):
     order = models.PositiveSmallIntegerField(
         blank=True,
         null=True,
-        verbose_name=_('order'),
+        verbose_name=_("order"),
     )
 
     class Meta:
@@ -53,7 +53,7 @@ class OwnableModel(models.Model):
         on_delete=models.SET_NULL,
         blank=True,
         null=True,
-        verbose_name=_('owner'),
+        verbose_name=_("owner"),
     )
 
     class Meta:
@@ -64,21 +64,21 @@ class PublishableModel(models.Model):
     """Abstract model with publication features."""
 
     PUB_STATUS_CHOICES = [
-        ('DRAFT', _('draft')),
-        ('PENDING', _('pending')),
-        ('PUBLISHED', _('published')),
+        ("DRAFT", _("draft")),
+        ("PENDING", _("pending")),
+        ("PUBLISHED", _("published")),
     ]
 
     pub_date = models.DateTimeField(
         blank=True,
         null=True,
-        verbose_name=_('publication date'),
+        verbose_name=_("publication date"),
     )
     pub_status = models.CharField(
         max_length=32,
         choices=PUB_STATUS_CHOICES,
-        default='DRAFT',
-        verbose_name=_('publication status'),
+        default="DRAFT",
+        verbose_name=_("publication status"),
     )
 
     class Meta:
@@ -91,12 +91,12 @@ class SEOModel(models.Model):
     search_title = models.CharField(
         max_length=255,
         blank=True,
-        verbose_name=_('search title'),
+        verbose_name=_("search title"),
     )
     search_description = models.CharField(
         max_length=255,
         blank=True,
-        verbose_name=_('search description'),
+        verbose_name=_("search description"),
     )
 
     class Meta:
@@ -110,7 +110,7 @@ class UUIDModel(models.Model):
         primary_key=True,
         default=uuid.uuid4,
         editable=False,
-        verbose_name=_('ID'),
+        verbose_name=_("ID"),
     )
 
     class Meta:
@@ -121,15 +121,15 @@ class VisibilityStatusModel(models.Model):
     """Abstract model with a visibility status."""
 
     VISIBILITY_STATUS_CHOICES = [
-        ('PRIVATE', _('private')),
-        ('PUBLIC', _('public')),
+        ("PRIVATE", _("private")),
+        ("PUBLIC", _("public")),
     ]
 
     visibility_status = models.CharField(
         max_length=32,
         choices=VISIBILITY_STATUS_CHOICES,
-        default='PUBLIC',
-        verbose_name=_('visibility status'),
+        default="PUBLIC",
+        verbose_name=_("visibility status"),
     )
 
     class Meta:
