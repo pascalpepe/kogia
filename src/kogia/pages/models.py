@@ -25,7 +25,7 @@ class AbstractPage(VisibilityStatusModel):
 
     title = models.CharField(
         max_length=255,
-        verbose_name=_('title'),
+        verbose_name=_("title"),
     )
 
     class Meta:
@@ -40,15 +40,15 @@ class AbstractPageTranslation(SEOModel, TranslationModel):
 
     slug = models.SlugField(
         max_length=255,
-        verbose_name=_('slug'),
+        verbose_name=_("slug"),
     )
     title = models.CharField(
         max_length=255,
-        verbose_name=_('title'),
+        verbose_name=_("title"),
     )
     content = models.TextField(
         blank=True,
-        verbose_name=_('content'),
+        verbose_name=_("content"),
     )
 
     class Meta:

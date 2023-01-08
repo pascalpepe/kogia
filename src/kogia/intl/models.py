@@ -25,7 +25,7 @@ class TranslationModel(models.Model):
         max_length=16,
         choices=settings.LANGUAGES,
         default=settings.LANGUAGE_CODE,
-        verbose_name=_('language'),
+        verbose_name=_("language"),
     )
 
     class Meta:
@@ -33,8 +33,8 @@ class TranslationModel(models.Model):
 
     def get_all_translations(self):
         """Get a list of all translations ordered by language."""
-        return list(self.parent.translations.order_by('language'))
+        return list(self.parent.translations.order_by("language"))
 
     def get_other_translations(self):
         """Get a list of other translations ordered by language."""
-        return list(self.parent.translations.exclude(id=self.id).order_by('language'))
+        return list(self.parent.translations.exclude(id=self.id).order_by("language"))

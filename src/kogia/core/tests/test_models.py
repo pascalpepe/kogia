@@ -18,7 +18,7 @@ from django.test import TestCase, modify_settings
 from kogia.core.tests.models import AllCore
 
 
-@modify_settings(INSTALLED_APPS={'prepend': 'kogia.core.tests'})
+@modify_settings(INSTALLED_APPS={"prepend": "kogia.core.tests"})
 class AllCoreModelsTest(TestCase):
     """Tests for all core models."""
 
@@ -28,17 +28,17 @@ class AllCoreModelsTest(TestCase):
         cls.allcore = AllCore.objects.create()
 
     def test_pub_status_max_length(self):
-        max_length = self.allcore._meta.get_field('pub_status').max_length
+        max_length = self.allcore._meta.get_field("pub_status").max_length
         self.assertEquals(max_length, 32)
 
     def test_search_description_max_length(self):
-        max_length = self.allcore._meta.get_field('search_description').max_length
+        max_length = self.allcore._meta.get_field("search_description").max_length
         self.assertEquals(max_length, 255)
 
     def test_search_title_max_length(self):
-        max_length = self.allcore._meta.get_field('search_title').max_length
+        max_length = self.allcore._meta.get_field("search_title").max_length
         self.assertEquals(max_length, 255)
 
     def test_visibility_status_max_length(self):
-        max_length = self.allcore._meta.get_field('visibility_status').max_length
+        max_length = self.allcore._meta.get_field("visibility_status").max_length
         self.assertEquals(max_length, 32)

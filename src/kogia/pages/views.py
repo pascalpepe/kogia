@@ -19,18 +19,28 @@ from django.views.generic import DetailView, ListView
 class PageDetail(DetailView):
     """View that displays a page."""
 
-    context_object_name = 'page'
-    template_name = 'pages/page_detail.html'
+    context_object_name = "page"
+    template_name = "pages/page_detail.html"
 
     def get_queryset(self):
-        return super().get_queryset().filter(language=self.request.LANGUAGE_CODE).select_related()
+        return (
+            super()
+            .get_queryset()
+            .filter(language=self.request.LANGUAGE_CODE)
+            .select_related()
+        )
 
 
 class PageList(ListView):
     """View that displays the list of pages."""
 
-    context_object_name = 'page_list'
-    template_name = 'pages/page_list.html'
+    context_object_name = "page_list"
+    template_name = "pages/page_list.html"
 
     def get_queryset(self):
-        return super().get_queryset().filter(language=self.request.LANGUAGE_CODE).select_related()
+        return (
+            super()
+            .get_queryset()
+            .filter(language=self.request.LANGUAGE_CODE)
+            .select_related()
+        )

@@ -19,4 +19,4 @@ from django.apps import AppConfig
 class CoreConfig(AppConfig):
     """Default application configuration."""
 
-    name = 'kogia.core'
+    name = "kogia.core"

@@ -13,10 +13,24 @@
 # limitations under the License.
 """Models for testing the Core application."""
 
-from kogia.core.models import (ArchivableModel, OrderableModel, OwnableModel, PublishableModel,
-                               SEOModel, UUIDModel, VisibilityStatusModel)
+from kogia.core.models import (
+    ArchivableModel,
+    OrderableModel,
+    OwnableModel,
+    PublishableModel,
+    SEOModel,
+    UUIDModel,
+    VisibilityStatusModel,
+)
 
 
-class AllCore(ArchivableModel, OrderableModel, OwnableModel, PublishableModel, SEOModel,
-              UUIDModel, VisibilityStatusModel):
+class AllCore(
+    ArchivableModel,
+    OrderableModel,
+    OwnableModel,
+    PublishableModel,
+    SEOModel,
+    UUIDModel,
+    VisibilityStatusModel,
+):
     """Model for testing all core abstract models."""

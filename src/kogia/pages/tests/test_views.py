@@ -25,18 +25,21 @@ class BasePageViewTest(TestCase):
     @classmethod
     def setUpTestData(cls):
         """Create objects for all tests."""
-        cls.page = Page.objects.create(title='Bar')
-        cls.page_en = PageTranslation.objects.create(slug='bar', title='Bar', parent=cls.page,
-                                                     language='en')
+        cls.page = Page.objects.create(title="Bar")
+        cls.page_en = PageTranslation.objects.create(
+            slug="bar", title="Bar", parent=cls.page, language="en"
+        )
 
 
-@modify_settings(INSTALLED_APPS={'prepend': 'kogia.pages.tests'})
-@override_settings(ROOT_URLCONF='kogia.pages.tests.urls')
+@modify_settings(INSTALLED_APPS={"prepend": "kogia.pages.tests"})
+@override_settings(ROOT_URLCONF="kogia.pages.tests.urls")
 class PageDetailViewTest(BasePageViewTest):
     """Tests for the page detail view."""
 
     def test_route_from_name(self):
-        page_detail_url = reverse('page-detail', kwargs={'slug': str(self.page_en.slug)})
+        page_detail_url = reverse(
+            "page-detail", kwargs={"slug": str(self.page_en.slug)}
+        )
         response = self.client.get(page_detail_url, follow=True)
         self.assertEqual(response.status_code, 200)
 
@@ -47,23 +50,23 @@ class PageDetailViewTest(BasePageViewTest):
     def test_templates_used(self):
         response = self.client.get(self.page_en.get_absolute_url(), follow=True)
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/page_detail.html')
+        self.assertTemplateUsed(response, "pages/page_detail.html")
 
 
-@modify_settings(INSTALLED_APPS={'prepend': 'kogia.pages.tests'})
-@override_settings(ROOT_URLCONF='kogia.pages.tests.urls')
+@modify_settings(INSTALLED_APPS={"prepend": "kogia.pages.tests"})
+@override_settings(ROOT_URLCONF="kogia.pages.tests.urls")
 class PageListViewTest(BasePageViewTest):
     """Tests for the page list view."""
 
     def test_route_from_name(self):
-        response = self.client.get(reverse('page-list'), follow=True)
+        response = self.client.get(reverse("page-list"), follow=True)
         self.assertEqual(response.status_code, 200)
 
     def test_route_from_path(self):
-        response = self.client.get('/pages/', follow=True)
+        response = self.client.get("/pages/", follow=True)
         self.assertEqual(response.status_code, 200)
 
     def test_templates_used(self):
-        response = self.client.get(reverse('page-list'), follow=True)
+        response = self.client.get(reverse("page-list"), follow=True)
         self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'pages/page_list.html')
+        self.assertTemplateUsed(response, "pages/page_list.html")
