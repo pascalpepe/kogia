@@ -7,13 +7,6 @@ the `Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>`_.
 Being a reusable Django application, you will need to install Python and
 Django before you can use it.
 
-.. contents::
-   :local:
-   :depth: 2
-
-
-----
-
 
 Requirements
 ============
@@ -43,11 +36,8 @@ dependencies of your project within
 a `Python virtual environment <https://docs.python.org/3/library/venv.html>`_.
 
 
-----
-
-
 Install Kogia
-=================
+=============
 
 Get the latest release from PyPI
 --------------------------------
@@ -69,14 +59,11 @@ Get the latest development version
    encounter new bugs in the development version.
 
 You can install the latest development version of this project from
-the `Git repository <https://gitlab.com/pascalpepe/kogia>`_:
+the `Git repository <https://github.com/pascalpepe/kogia>`_:
 
 .. code-block:: bash
 
-    pip install git+https://gitlab.com/pascalpepe/kogia.git@main#egg=kogia
-
-
-----
+    pip install git+https://github.com/pascalpepe/kogia.git@main#egg=kogia
 
 
 Quick start guide

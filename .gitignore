@@ -10,7 +10,7 @@ dist/
 # Unit test / coverage reports
 *.py,cover
 .coverage
-.tox/
+.coverage.*
 coverage.json
 coverage.xml
 htmlcov/
@@ -21,12 +21,6 @@ db.sqlite3
 
 # Sphinx
 docs/_build/
-
-# Node.js
-node_modules/
-
-# GitLab Pages
-public/
 
 # pyenv
 .python-version
@@ -43,7 +37,6 @@ venv.bak/
 # Logs
 logs
 *.log
-npm-debug.log*
 
 # Text editor / IDE settings
 *.sublime-*
