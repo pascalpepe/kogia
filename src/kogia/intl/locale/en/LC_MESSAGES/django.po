@@ -1,6 +1,6 @@
-# English translation of Kogia (https://www.pascalpepe.com)
+# English translation of Kogia.
 #
-# Copyright (C) 2017-2020 Pascal Pepe <contact@pascalpepe.com>
+# Copyright 2017-2023 Pascal Pepe
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kogia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-06 14:43+0200\n"
+"POT-Creation-Date: 2023-01-08 05:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Pascal Pepe <contact@pascalpepe.com>\n"
 "Language-Team: \n"
@@ -29,10 +29,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: kogia/intl/apps.py:24
+#: src/kogia/intl/apps.py:24
 msgid "Internationalization"
 msgstr ""
 
-#: kogia/intl/models.py:28
+#: src/kogia/intl/models.py:28
 msgid "language"
 msgstr ""

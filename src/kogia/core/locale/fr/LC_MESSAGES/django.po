@@ -1,6 +1,6 @@
-# French translation of Kogia (https://www.pascalpepe.com)
+# French translation of Kogia.
 #
-# Copyright (C) 2017-2020 Pascal Pepe <contact@pascalpepe.com>
+# Copyright 2017-2023 Pascal Pepe
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Kogia\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-10-06 14:43+0200\n"
+"POT-Creation-Date: 2023-01-08 05:48-0600\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Pascal Pepe <contact@pascalpepe.com>\n"
 "Language-Team: \n"
@@ -29,58 +29,58 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: kogia/core/models.py:28
+#: src/kogia/core/models.py:28
 msgid "archived?"
 msgstr "archivé ?"
 
-#: kogia/core/models.py:41
+#: src/kogia/core/models.py:41
 msgid "order"
 msgstr "ordre"
 
-#: kogia/core/models.py:56
+#: src/kogia/core/models.py:56
 msgid "owner"
 msgstr "propriétaire"
 
-#: kogia/core/models.py:67
+#: src/kogia/core/models.py:67
 msgid "draft"
 msgstr "brouillon"
 
-#: kogia/core/models.py:68
+#: src/kogia/core/models.py:68
 msgid "pending"
 msgstr "en attente"
 
-#: kogia/core/models.py:69
+#: src/kogia/core/models.py:69
 msgid "published"
 msgstr "publié"
 
-#: kogia/core/models.py:75
+#: src/kogia/core/models.py:75
 msgid "publication date"
 msgstr "date de publication"
 
-#: kogia/core/models.py:81
+#: src/kogia/core/models.py:81
 msgid "publication status"
 msgstr "état de publication"
 
-#: kogia/core/models.py:94
+#: src/kogia/core/models.py:94
 msgid "search title"
 msgstr "titre pour recherche"
 
-#: kogia/core/models.py:99
+#: src/kogia/core/models.py:99
 msgid "search description"
 msgstr "description pour recherche"
 
-#: kogia/core/models.py:113
+#: src/kogia/core/models.py:113
 msgid "ID"
 msgstr "ID"
 
-#: kogia/core/models.py:124
+#: src/kogia/core/models.py:124
 msgid "private"
 msgstr "privé"
 
-#: kogia/core/models.py:125
+#: src/kogia/core/models.py:125
 msgid "public"
 msgstr "public"
 
-#: kogia/core/models.py:132
+#: src/kogia/core/models.py:132
 msgid "visibility status"
 msgstr "état de visibilité"

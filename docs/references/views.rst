@@ -10,6 +10,7 @@ Kogia Pages
 
 .. autoclass:: kogia.pages.views.PageDetail
    :members:
+   :noindex:
 
 
 ``PageList``
@@ -17,3 +18,4 @@ Kogia Pages
 
 .. autoclass:: kogia.pages.views.PageList
    :members:
+   :noindex:
