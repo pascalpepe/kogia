@@ -19,7 +19,6 @@ Tests
 
 - Set up the project testing suite with:
 
-  * `tox <https://tox.readthedocs.io>`_ for automated testing,
   * `Coverage.py <https://coverage.readthedocs.io>`_ for measuring code coverage,
   * `Flake8 <https://flake8.readthedocs.io>`_ for linting.
 

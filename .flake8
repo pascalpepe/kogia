@@ -1,12 +1,3 @@
 [flake8]
-exclude =
-    env
-    venv
-    .git
-    .tox
-    __pycache__
-    build
-    dist
-    migrations
 max-complexity = 10
 max-line-length = 99
